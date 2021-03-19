@@ -25,9 +25,9 @@ exports.handler = async (event,context)=>{
 
     } */
 
-    const {name,email,message,subject} = JSON.parse(event.body)
+    const {message} = JSON.parse(event.body)
 
-    if(!name || !email||!message|| !subject){
+    if(!message){
 
         return {
             headers:{'Access-Control-Allow-Origin':'*'},

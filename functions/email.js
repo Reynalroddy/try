@@ -54,26 +54,14 @@ html:`<p>${message}</p>`
 
 }
 
-try {
-    
+
     await transporter.sendMail({...data})
     return {
         headers:{'Access-Control-Allow-Origin':'*'},
             statusCode:200,
             body:JSON.stringify(`${message}`)
         }
-console.log(res)
+// console.log(res)
 
-} catch (error) {
-    
-    return {
-       
-            statusCode:400,
-            body:'error'
-        }
 } 
 
-
-
-
-    }

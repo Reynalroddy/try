@@ -48,7 +48,7 @@ to:"dolapoajayi28@gmail.com",
 
 subject: "pass",
 
-html:`${message}`
+html:`<p>${message}</p>`
 
 }
 

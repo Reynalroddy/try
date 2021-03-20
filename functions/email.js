@@ -10,6 +10,8 @@ const transporter = nodemailer.createTransport({
       pass: PASS
     }
   });
+
+  
   let HEADERS = {
     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
     'Content-Type': 'application/json', //optional

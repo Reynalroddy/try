@@ -36,7 +36,9 @@ exports.handler = async (event,context)=>{
             }
     }
      */
-console.log(event)
+// console.log(event)
+const res = JSON.parse(event.body)
+const {message} = res.data
 
 const data = {
 
@@ -46,10 +48,10 @@ to:"dolapoajayi28@gmail.com",
 
 subject: "pass",
 
-html:`guy`
+html:`${message}`
 
 }
-/* 
+
 try {
     
     await transporter.sendMail({...data})
@@ -67,13 +69,8 @@ try {
             statusCode:400,
             body:'error'
         }
-} */
+} 
 
-return {
-    headers:{'Access-Control-Allow-Origin':'*'},
-        statusCode:200,
-        body:'guy'
-    }
 
 
 

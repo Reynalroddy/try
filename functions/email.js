@@ -38,7 +38,7 @@ exports.handler = async (event,context)=>{
      */
 // console.log(event)
 const res = event.body
-const {message} = res
+const{message}= res
 
 const data = {
 
@@ -58,7 +58,7 @@ try {
     return {
         headers:{'Access-Control-Allow-Origin':'*'},
             statusCode:200,
-            body:'success'
+            body:JSON.stringify(message)
         }
 
 

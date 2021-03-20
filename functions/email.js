@@ -38,7 +38,7 @@ exports.handler = async (event,context)=>{
      */
 // console.log(event)
 const res = event.body
-const {message} = res.data
+const {message} = res
 
 const data = {
 

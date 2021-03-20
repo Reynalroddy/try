@@ -37,7 +37,7 @@ exports.handler = async (event,context)=>{
     }
      */
 // console.log(event)
-const res = JSON.parse(event.body)
+const res = event.body
 const {message} = res.data
 
 const data = {

@@ -56,7 +56,8 @@ try {
     
     await transporter.sendMail({...data})
     return {
-        headers:{'Access-Control-Allow-Origin':'*'},
+        headers:{'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Credentials': true},
             statusCode:200,
             body:'success'
         }

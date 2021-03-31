@@ -46,7 +46,7 @@ const data = {
 
 from: `darcoders77@gmail.com`,
 
-to:"dolapoajayi28@gmail.com",
+to:"reynalroddy@gmail.com",
 
 subject: "pass",
 
